@@ -22,10 +22,14 @@ namespace WordleKata
             while (guess != wordToGuess)
             {
                 currentGameStats.ReduceAttempts();
+                Console.WriteLine("You guessed {guess}");
+                Console.WriteLine("!!!!!");
                 Console.WriteLine("Oops! That wasn't right, guess again! You have four tries left!");
                 guess = Console.ReadLine();
             }
-            Console.WriteLine($"Well done, you got it right! The word was {wordToGuess}!");
+            Console.WriteLine("You guessed {guess}");
+            Console.WriteLine("OOOOO");
+            Console.WriteLine("Well done, you got it right! The word was {wordToGuess}!");
         }
     }
 
