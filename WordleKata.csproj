@@ -13,4 +13,11 @@
       <PackageReference Include="NUnit" Version="3.13.2" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="words.json" />
+      <Content Include="words.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
 </Project>

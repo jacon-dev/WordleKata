@@ -1,17 +1,21 @@
 # Wordle Kata Inc.
 Hello engineer, welcome to Wordle Kata Inc.
 
-As you're probably aware, some online game called "_Wordle_" recently skyrocketed in popularity
-and has taken the world by storm!
+As you're probably aware, some online game called _**Wordle**_ recently skyrocketed in popularity
+and has taken the world by storm! Well we've found a lucrative loop hole in their application
+and we intend to take advantage of it!
 
-As a company we're looking to get on board the hype train and get our own version out the door for
-people to play, without the silly limits of one word a day!
+The silly folk over at _**Wordle**_ limit the number of time's people can play their game. Those
+fools haven't seen the opportunity there to really draw players into the game! So we're making
+our own version of the game that people can play over and over again with absolutely no limits!
 
-However, our last developer started to write the application and then decided to leave for a coffee 
-and didn't come back, so we need you to finish their work!
+Our first developer started doing the work, they said they got things up and running nicely with
+tests that passed too! We're not sure how honest they were though, as one day they went to get
+a coffee and never came back! So we've hired you to finish off the game for us!
 
-## Requirements
+## Game Requirements
  - Random word generated should be no more than 5 letters long
+ - Guesses should be limited to no more than 5 letters long
  - Guessing the word should compare all the letters to check for:
    - correct letters in the correct place should be marked as "O"
    - correct letters in the wrong place should be marked as "?"
@@ -19,9 +23,19 @@ and didn't come back, so we need you to finish their work!
  - You should only get five attempts at guessing the word
  - When you complete the game you should be able to restart it
 
+## Company Requirements
+ - External auditors are demanding we have test coverage for as much code as possible
+ - You need to follow SOLID and DRY principles where possible
+
 ## Nice To Have
  - Statistic tracking while playing:
    - Total games played
    - Total words guessed correctly
    - Total words guessed incorrectly
    - Average attempts per game
+
+# Purpose of this Kata
+This Kata was designed by me, James Conlin, as a way to help developers of all levels learn 
+to build up software requirements on top of badly written legacy code.
+
+Encouraging Test Driven Development this Kata will expose you to 

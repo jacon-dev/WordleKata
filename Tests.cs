@@ -19,5 +19,13 @@ namespace WordleKata
             var word = _wordService.GetRandomWord();
             Assert.AreEqual(5, word.Length);
         }
+
+        [Test]
+        public void TestThatWrongAnswerReducesAttempts()
+        {
+            var stats = new CurrentGameStats();
+            stats.ReduceAttempts();
+            Assert.AreEqual(-1, stats.Attempts);
+        }
     }
 }
