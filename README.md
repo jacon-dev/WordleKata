@@ -10,8 +10,8 @@ fools haven't seen the opportunity there to really draw players into the game! S
 our own version of the game that people can play over and over again with absolutely no limits!
 
 Our first developer started doing the work, they said they got things up and running nicely with
-tests that passed too! We're not sure how honest they were though, as one day they went to get
-a coffee and never came back! So we've hired you to finish off the game for us!
+tests that passed too! Our testers tried the game and it ran really badly, so we fired the
+developer. Now we need you to get the game up and running as soon as possible!
 
 ## Game Requirements
  - Random word generated should be no more than 5 letters long
