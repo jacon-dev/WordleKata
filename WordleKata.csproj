@@ -18,6 +18,15 @@
       <Content Include="words.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
+      <None Remove="nppBackup\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="nppBackup\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="nppBackup\**" />
     </ItemGroup>
 
 </Project>
