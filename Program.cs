@@ -17,18 +17,18 @@ namespace WordleKata
         {
             var currentGameStats = new CurrentGameStats();
             var wordToGuess = _wordService.GetRandomWord();
-            Console.WriteLine("You've been given a random 5 letter word! You have five guesses to get it right!");
+            Console.WriteLine("You've been given a random 5 letter word! You have six guesses to get it right!");
             var guess = Console.ReadLine();
-            while (guess != wordToGuess)
+            while (guess != wordToGuess && currentGameStats.Attempts > 0)
             {
                 currentGameStats.ReduceAttempts();
                 Console.WriteLine("You guessed {guess}");
-                Console.WriteLine("!!!!!");
+                Console.WriteLine(".....");
                 Console.WriteLine("Oops! That wasn't right, guess again! You have four tries left!");
                 guess = Console.ReadLine();
             }
             Console.WriteLine("You guessed {guess}");
-            Console.WriteLine("OOOOO");
+            Console.WriteLine("AAAAA");
             Console.WriteLine("Well done, you got it right! The word was {wordToGuess}!");
         }
     }
